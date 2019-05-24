@@ -39,7 +39,7 @@ $ make
 libcurl >= 7.22.0 library and headers are required with support for https
 ```
 ```
-sudo yum install libcurl-devel
+$ sudo yum install libcurl-devel
 ```
 
 - Execution.
