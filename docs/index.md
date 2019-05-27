@@ -25,14 +25,14 @@
 
 - Unzip the R file to a folder.
 ```
-$ tar -zxvf R-3.6.0.tar.gz -C /home/ycho/R
+$ sudo tar -zxvf R-3.6.0.tar.gz -C /usr/bin/R
 ```
 
 - Install.
 ```
-$ cd /home/ycho/R/R-3.6.0
-$ ./configure  --enable-R-shlib --with-readline=no --with-x=no
-$ make
+$ cd /usr/bin/R/R-3.6.0
+$ sudo ./configure  --enable-R-shlib --with-readline=no --with-x=no
+$ sudo make
 ```
 > If below message is shown, then install **libcurl-devel**.
 ```
@@ -44,7 +44,7 @@ $ sudo yum install libcurl-devel
 
 - Execution.
 ```
-$ cd /home/ycho/R/R-3.6.0/bin
+$ cd /usr/bin/R/R-3.6.0/bin
 $ ./R
 ```
 
@@ -68,7 +68,7 @@ $ sudo yum install rstudio-server-rhel-1.2.1335-x86_64.rpm
 $ sudo emacs /etc/rstudio/rserver.conf
 www-port=8787
 www-address=192.168.0.1 # it is a pc ip address which the R-server has been installed.
-rsession-which-r=/home/ycho/R/R-3.6.0/bin/R
+rsession-which-r=/usr/bin/R/R-3.6.0/bin/R
 
 $ sudo emacs /etc/rstudio/rsession.conf
 www-port=8787
