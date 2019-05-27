@@ -34,7 +34,7 @@ $ cd /home/ycho/R/R-3.6.0
 $ ./configure  --enable-R-shlib --with-readline=no --with-x=no
 $ make
 ```
-> If this message is shown, then install **libcurl-devel**.
+> If below message is shown, then install **libcurl-devel**.
 ```
 libcurl >= 7.22.0 library and headers are required with support for https
 ```
