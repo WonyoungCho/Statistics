@@ -10,7 +10,7 @@ pages:
     - Home: 'index.md'
     - Algorithm : 'algorithm.md'
     - Basics: 
-        - Terminology : 'terminology.md'
-        - Statistics  : 'basic.md'
+        - 'Terminology' : 'terminology.md'
+        - 'Statistics'  : 'basic.md'
 
 theme: readthedocs
