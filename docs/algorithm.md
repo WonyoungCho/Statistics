@@ -16,6 +16,7 @@ Item(`I`), Dataset(`D`), Transanction(`T`), Support(`S`), Confidence(`C`)
 :  상품(`X`)이 선택된 뒤, 다른 상품(`Y`)이 선택될 확률
 
 예)
+
 |di| subset|
 |-|-|
 |d1|{i1,i3}|
