@@ -8,7 +8,9 @@ extra_javascript: [docs.js]
 
 pages:
     - Home: 'index.md'
-    - Terminology : 'terminology.md'
-    - Basics: 'basic.md'
+    - Algorithm : 'algorithm.md'
+    - Basics: 
+        - Terminology : 'terminology.md'
+        - Statistics  : 'basic.md'
 
 theme: readthedocs
