@@ -17,12 +17,16 @@ Item(`I`), Dataset(`D`), Transanction(`T`), Support(`S`), Confidence(`C`)
 
 예)
 
-|di| subset|
+|D| subset|
 |-|-|
-|d1|{i1,i3}|
-|d2|{i1,i4}|
-|d3|{i2,i4,i5}|
-|d4|{i3,i5,i6}|
-|d5|{i2,i4,i7}|
-|d6|{i3,i5,i7}|
+|d1|i1, i3|
+|d2|i2, i4|
+|d3|i2, i4, i5|
+|d4|i3, i5, i6|
+|d5|i2, i4, i7|
+|d6|i3, i5, i7|
+
+X={i2, i4} 일때, P(X) = N(d2,d3,d5)/N(D) = 3/6 = 0.5. 즉, Support = 0.5 (50%).
+
+X={i2, i4} 를 선택하고 Y={i5} 를 선택할 활률은 P(Y|X) = N(X∪Y)/N(X) = N(d3)/N(d2,d3,d5) = 1/3 = 0.33. 즉, Confidence = 0.33 (33%).
 
