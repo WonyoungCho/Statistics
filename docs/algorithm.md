@@ -26,7 +26,9 @@ Item(`I`), Dataset(`D`), Transanction(`T`), Support(`S`), Confidence(`C`)
 |d5|i2, i4, i7|
 |d6|i3, i5, i7|
 
-X={i2, i4} 일때, P(X) = N(d2,d3,d5)/N(D) = 3/6 = 0.5. 즉, Support = 0.5 (50%).
+X={i2, i4} 일때, 빈번 확률
+> P(X) = N(d2,d3,d5)/N(D) = 3/6 = 0.5. 즉, Support = 0.5 (50%).
 
-X={i2, i4} 를 선택하고 Y={i5} 를 선택할 활률은 P(Y|X) = N(X∪Y)/N(X) = N(d3)/N(d2,d3,d5) = 1/3 = 0.33. 즉, Confidence = 0.33 (33%).
+X={i2, i4} 를 선택하고 Y={i5} 를 선택할 활률
+> P(Y|X) = N(X∪Y)/N(X) = N(d3)/N(d2,d3,d5) = 1/3 = 0.33. 즉, Confidence = 0.33 (33%).
 
