@@ -13,7 +13,15 @@ Item(`I`), Dataset(`D`), Transanction(`T`), Support(`S`), Confidence(`C`)
 : 상품들(`X`)이 거래될 확률. `P(S)=N(X)/N(D)`
 
 ## Confidence
-:  상품이 선택된 뒤, 다른 상품이 선택될 확률
+:  상품(`X`)이 선택된 뒤, 다른 상품(`Y`)이 선택될 확률
 
-
+예)
+di| subset
+-|-
+d1|{i1,i3}
+d2|{i1,i4}
+d3|{i2,i4,i5}
+d4|{i3,i5,i6}
+d5|{i2,i4,i7}
+d6|{i3,i5,i7}
 
