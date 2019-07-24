@@ -4,7 +4,7 @@
 Item(`I`), Transanction(`T`), Support(`S`), Confidence(`C`)
 
 ## Item
-: 거래에 사용되는 품목을 이야기한다.
+: 거래에 사용되는 품목을 이야기한다. `I={i1,i2,...,im}`
 
 ## Transanction
 : 
