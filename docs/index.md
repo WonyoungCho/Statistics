@@ -1,5 +1,7 @@
 # Statistics
 
+Analyze data using python and R-studio.
+
 <a href="https://stat.readthedocs.io" target="_blank"> https://stat.readthedocs.io </a>
 
 
