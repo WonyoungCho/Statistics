@@ -1,4 +1,4 @@
-# Python library
+# Python: import module
 ```
 import seaborn as sns
 import matplotlib.pyplot as plt
