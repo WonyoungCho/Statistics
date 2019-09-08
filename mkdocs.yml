@@ -12,5 +12,6 @@ pages:
     - Basics: 
         - 'Terminology' : 'terminology.md'
         - 'Statistics'  : 'basic.md'
+    - Analysis: 'analysis.md'
 
 theme: readthedocs
