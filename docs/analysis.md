@@ -57,7 +57,7 @@ def plot_heatmap(bfile1,bfile2):
     df=pd.read_csv('./data1/'+bfile1+'.csv').set_index('id').drop(columns='group')
 
     #sns.heatmap(df, annot=True, linewidths=1, linecolor='black')
-
+    sns.set(font_scale=1)
     sns.clustermap(df,cmap='RdBu_r')
     plt.show()
 ```
