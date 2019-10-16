@@ -51,24 +51,12 @@ $ ./R
 ```
 
 ## Install R-Studio (Ububtu)
-Add repository in `/etc/apt/sources.list`
+Add repository in `/etc/apt/sources.list` matching with your OS.
 ```
 deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/
-```
-or
-```
 deb https://cloud.r-project.org/bin/linux/ubuntu cosmic-cran35/
-```
-or
-```
 deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
-```
-or
-```
 deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/
-```
-or
-```
 deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/
 ```
 and
@@ -96,7 +84,7 @@ in your /etc/apt/sources.list file.
 <https://cran.r-project.org/bin/linux/ubuntu/README.html>
 
 
-## Install R-Studio Server
+## Install R-Studio Server (CentOS)
 
 - Connect to R-Stuio Homepage.
 
@@ -129,3 +117,13 @@ $ rstudio-server verify-installation
 - Open R-studio.
 
 > Open web browser - Connect to http://192.168.0.1:8787 - Log in with pc ID and PASSWORD.
+
+## Install R-Studio Server (Ubuntu)
+```
+$ sudo apt install gdebi-core
+$ cd Download
+$ wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5001-amd64.deb
+$ sudo gdebi rstudio-server-1.2.5001-amd64.deb
+```
+<https://rstudio.com/products/rstudio/download-server/debian-ubuntu/>
+
