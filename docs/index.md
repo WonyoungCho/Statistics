@@ -118,6 +118,11 @@ $ rstudio-server verify-installation
 
 > Open web browser - Connect to http://192.168.0.1:8787 - Log in with pc ID and PASSWORD.
 
+- If the connection is refused, allow the port.
+```
+sudo ufw allow 8787
+```
+
 ## Install R-Studio Server (Ubuntu)
 ```
 $ sudo apt install gdebi-core
