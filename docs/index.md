@@ -15,7 +15,7 @@ Analyze data using python and R-studio.
 
 # R-Studio installation
 
-## Install R-Studio
+## Install R-Studio (CentOS)
 
 - Connect to R Homepage.
 
@@ -49,6 +49,51 @@ $ sudo yum install libcurl-devel
 $ cd /usr/bin/R/R-3.6.0/bin
 $ ./R
 ```
+
+## Install R-Studio (Ububtu)
+Add repository in `/etc/apt/sources.list`
+```
+deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/
+```
+or
+```
+deb https://cloud.r-project.org/bin/linux/ubuntu cosmic-cran35/
+```
+or
+```
+deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
+```
+or
+```
+deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/
+```
+or
+```
+deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/
+```
+and
+```
+$ sudo apt-get update
+```
+If some error about **publick key** is shown during the update, you need to fetch the public key in your system.
+```
+ex) The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 9867KJ2741IO09
+
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9867KJ2741IO09
+```
+After then, update and install R.
+```
+$ sudo apt-get update
+$ sudo apt-get install r-base
+$ sudo apt-get install r-base-dev
+```
+Installation and compilation of R or some of its packages may require Ubuntu packages from the “backports” repositories. Therefore, it is suggested to activate the backports repositories with an entry like
+```
+deb https://<my.favorite.ubuntu.mirror>/ bionic-backports main restricted universe
+```
+in your /etc/apt/sources.list file.
+
+<https://cran.r-project.org/bin/linux/ubuntu/README.html>
 
 
 ## Install R-Studio Server
