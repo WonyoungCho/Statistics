@@ -12,45 +12,26 @@ Analyze data using python and R-studio.
 <bourbaki10@gmail.com>
 
 ---
-
 # R-Studio installation
-
-## Install R-Studio (CentOS)
-
-- Connect to R Homepage.
-
-> <https://cran.r-project.org/>
-
-- Download R-3.6.0.tar.gz file.
-
-> <https://cran.r-project.org/src/base/R-3/R-3.6.0.tar.gz>
-
-- Unzip the R file to a folder.
+## CentOS
 ```
+$ wget https://cran.r-project.org/src/base/R-3/R-3.6.0.tar.gz
 $ sudo tar -zxvf R-3.6.0.tar.gz -C /usr/bin/R
-```
 
-- Install.
-```
 $ cd /usr/bin/R/R-3.6.0
 $ sudo ./configure  --enable-R-shlib --with-readline=no --with-x=no
 $ sudo make
-```
-> If below message is shown, then install **libcurl-devel**.
-```
-libcurl >= 7.22.0 library and headers are required with support for https
-```
-```
-$ sudo yum install libcurl-devel
-```
 
-- Execution.
-```
+> If below message is shown, then install **libcurl-devel**.
+libcurl >= 7.22.0 library and headers are required with support for https
+
+$ sudo yum install libcurl-devel
+
 $ cd /usr/bin/R/R-3.6.0/bin
 $ ./R
 ```
 
-## Install R-Studio (Ububtu)
+## Ububtu
 Add repository in `/etc/apt/sources.list` matching with your OS.
 ```
 deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/
@@ -58,9 +39,7 @@ deb https://cloud.r-project.org/bin/linux/ubuntu cosmic-cran35/
 deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
 deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/
 deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/
-```
-and
-```
+
 $ sudo apt-get update
 ```
 If some error about **publick key** is shown during the update, you need to fetch the public key in your system.
@@ -72,8 +51,7 @@ $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9867KJ2741IO09
 After then, update and install R.
 ```
 $ sudo apt-get update
-$ sudo apt-get install r-base
-$ sudo apt-get install r-base-dev
+$ sudo apt-get install r-base r-base-dev
 ```
 Installation and compilation of R or some of its packages may require Ubuntu packages from the “backports” repositories. Therefore, it is suggested to activate the backports repositories with an entry like
 ```
@@ -84,22 +62,12 @@ in your /etc/apt/sources.list file.
 <https://cran.r-project.org/bin/linux/ubuntu/README.html>
 
 
-## Install R-Studio Server (CentOS)
-
-- Connect to R-Stuio Homepage.
-
-> <https://www.rstudio.com/products/rstudio/download/>
-
-- Download & Install R-Stuio Server.
-
-> <https://www.rstudio.com/products/rstudio/download-server/>
+# R-Studio server installation
+## CentOS
 ```
 $ wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.1335-x86_64.rpm
 $ sudo yum install rstudio-server-rhel-1.2.1335-x86_64.rpm
-```
 
-- Configuration.
-```
 $ sudo emacs /etc/rstudio/rserver.conf
 www-port=8787
 www-address=192.168.0.1 # it is a pc ip address which the R-server has been installed.
@@ -107,13 +75,9 @@ rsession-which-r=/usr/bin/R/R-3.6.0/bin/R
 
 $ sudo emacs /etc/rstudio/rsession.conf
 www-port=8787
-```
 
-- Verification.
-```
 $ rstudio-server verify-installation
 ```
-
 - Open R-studio.
 
 > Open web browser - Connect to http://192.168.0.1:8787 - Log in with pc ID and PASSWORD.
@@ -123,12 +87,12 @@ $ rstudio-server verify-installation
 sudo ufw allow 8787
 ```
 
-## Install R-Studio Server (Ubuntu)
+### Ubuntu
 ```
+$ sudo apt-get install -y apt-transport-https (if needed)
 $ sudo apt install gdebi-core
 $ cd Download
 $ wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5001-amd64.deb
 $ sudo gdebi rstudio-server-1.2.5001-amd64.deb
 ```
 <https://rstudio.com/products/rstudio/download-server/debian-ubuntu/>
-
