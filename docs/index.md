@@ -67,7 +67,20 @@ in your /etc/apt/sources.list file.
 ```
 $ wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.1335-x86_64.rpm
 $ sudo yum install rstudio-server-rhel-1.2.1335-x86_64.rpm
+```
 
+## Ubuntu
+```
+$ sudo apt-get install -y apt-transport-https (if needed)
+$ sudo apt install gdebi-core
+$ cd Download
+$ wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5001-amd64.deb
+$ sudo gdebi rstudio-server-1.2.5001-amd64.deb
+```
+<https://rstudio.com/products/rstudio/download-server/debian-ubuntu/>
+
+## Configure
+```
 $ sudo emacs /etc/rstudio/rserver.conf
 www-port=8787
 www-address=192.168.0.1 # it is a pc ip address which the R-server has been installed.
@@ -86,13 +99,3 @@ $ rstudio-server verify-installation
 ```
 sudo ufw allow 8787
 ```
-
-### Ubuntu
-```
-$ sudo apt-get install -y apt-transport-https (if needed)
-$ sudo apt install gdebi-core
-$ cd Download
-$ wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5001-amd64.deb
-$ sudo gdebi rstudio-server-1.2.5001-amd64.deb
-```
-<https://rstudio.com/products/rstudio/download-server/debian-ubuntu/>
