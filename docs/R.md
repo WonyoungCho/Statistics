@@ -1,6 +1,12 @@
 # Package installation
 ```
-install.packages(c("dplyr","ggplot2","ISLR","MASS","glmnet","randomForest","gbm","rpart","boot","ROCR","gridExtra","data.table"))
+install.packages(c("dplyr","ggplot2","ISLR","MASS","glmnet","randomForest","gbm","rpart","boot","ROCR","gridExtra","data.table","pcr","nnet","deepnet","klaR"))
+# nnet : neural network
+# deepnet : deep learning
+# klaR : Bayesian
+
+install.packages("caret",dependencies=c("Depends","Suggests"))
+# caret : validate model
 ```
 
 # Load packages
