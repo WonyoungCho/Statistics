@@ -1,6 +1,6 @@
 # Package installation
 ```
-> install.packages(c("dplyr","ggplot2","ISLR","MASS","glmnet","randomForest","gbm","rpart","boot"))
+> install.packages(c("dplyr","ggplot2","ISLR","MASS","glmnet","randomForest","gbm","rpart","boot","ROCR"))
 ```
 
 # Load packages
@@ -14,4 +14,5 @@ library(randomForest)
 library(gbm)
 library(rpart)
 library(boot)
+library(ROCR)
 ```
