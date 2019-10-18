@@ -24,3 +24,7 @@ library(data.table)
 library(ROCR)
 library(gridExtra)
 ```
+
+# Tips
+If some data has special character as a name of parameter, it returns error message.
+ex) `object ~char_freq_;~ not found`
