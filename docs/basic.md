@@ -1,6 +1,8 @@
 # Basic statistics
 ```
 from scipy import stats 
+import seaborn as sns
+import matplotlib.pyplot as plt
 ```
 ## T-test
 두 집단간의 평균 차이가 유의미한지 확인할 때 사용.
@@ -26,6 +28,15 @@ stats.ttest_ind(group1, group2, equal_var=False) # Default equal_var=True
 stats.shapiro(group1)
 
 # 
+```
+```
+fig=sns.distplot(group1, kde=False, fit=stats.norm, label='G1')
+fig=sns.distplot(group2, kde=False, fit=stats.norm, label='G2')
+fig.lines[0].set_linestyle(":")
+plt.title('G1: '+str(stats.shapiro(group1)[1])+', G2: '+str(stats.shapiro(group2)[1]))
+plt.grid(ls='--',alpha=0.4)
+plt.legend()
+plt.savefig('dist',dpi=300)
 ```
 ## kolmogorov-Smirnov test
 연속형 데이터가 정규분포를 따르는지 확인할때 쓰는 검정방법.
