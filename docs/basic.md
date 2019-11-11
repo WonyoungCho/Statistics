@@ -11,6 +11,5 @@
 - 집단이 둘인지.
 > - 두 집단을 넘으면 ANOVA 시행.
 
-- T-score = (m-d)/[std/sqrt(n)]
-- std = sqrt([Sum(Xai-Xbi-m)^2]/(n-1))
-- 
+- T-score = (mA-mB)/[SAB(1/nA + 1/nB)] : 
+- SAB = sqrt([(nA-1)SA^2 + (nB-1)SB^2]/(nA+nB-2))
