@@ -8,5 +8,5 @@
 > - 시각적 : QQ-plot
 > - 정량적 : Shapiro-Wilk normality test. H0=데이터가 정규분포를 따른다. alpha=0.05.
 > - 정규분포를 따르지 않으면 Wilcoxon test.
-- 집단이 두 개인지.
+- 집단이 둘인지.
 > - 두 집단을 넘으면 ANOVA 시행.
