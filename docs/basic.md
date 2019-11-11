@@ -10,3 +10,5 @@
 > - 정규분포를 따르지 않으면 Wilcoxon test.
 - 집단이 둘인지.
 > - 두 집단을 넘으면 ANOVA 시행.
+
+- T-score : (m-d)/[std/sqrt(n)]
