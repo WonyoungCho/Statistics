@@ -1,5 +1,7 @@
 # Basic statistics
-
+```
+from scipy import stats 
+```
 ## T-test
 두 집단간의 평균 차이가 유의미한지 확인할 때 사용.
 
@@ -14,3 +16,16 @@
 
 > - T-score = (mA-mB)/[SAB(1/nA + 1/nB)] : 
 > - SAB = sqrt([(nA-1)SA^2 + (nB-1)SB^2]/(nA+nB-2))
+
+```
+# T-test
+stats.ttest_ind(group1, group2, equal_var=False) # Default equal_var=True
+# 분산이 같다고 가정할지, 아닐지 결정
+
+# Shapiro-Wilk test
+stats.shapiro(group1)
+
+# 
+```
+## kolmogorov-Smirnov test
+연속형 데이터가 정규분포를 따르는지 확인할때 쓰는 검정방법.
