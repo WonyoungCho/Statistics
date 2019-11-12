@@ -4,6 +4,7 @@ from scipy import stats
 import seaborn as sns
 import matplotlib.pyplot as plt
 ```
+
 ## T-test
 두 집단간의 평균 차이가 유의미한지 확인할 때 사용.
 
@@ -27,7 +28,6 @@ stats.ttest_ind(group1, group2, equal_var=False) # Default equal_var=True
 # Shapiro-Wilk test
 stats.shapiro(group1)
 
-# 
 ```
 ```
 fig=sns.distplot(group1, kde=False, fit=stats.norm, label='G1')
