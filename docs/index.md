@@ -30,6 +30,12 @@ $ sudo yum install libcurl-devel
 $ cd /usr/bin/R/R-3.6.0/bin
 $ ./R
 ```
+or
+```
+$ sudo yum install epel-release
+$ sudo yum update
+$ sudo yum install -y R
+```
 
 ## Ububtu
 Add repository in `/etc/apt/sources.list` matching with your OS.
