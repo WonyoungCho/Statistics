@@ -103,5 +103,7 @@ $ rstudio-server verify-installation
 
 - If the connection is refused, allow the port.
 ```
-sudo ufw allow 8787
+$ sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
+$ sudo firewall-cmd --reload
+$ sudo ufw allow 8787
 ```
