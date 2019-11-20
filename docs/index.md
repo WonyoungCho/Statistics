@@ -95,7 +95,9 @@ rsession-which-r=/usr/bin/R/R-3.6.0/bin/R
 $ sudo emacs /etc/rstudio/rsession.conf
 www-port=8787
 
+$ rstudio-server stop
 $ rstudio-server verify-installation
+$ rstudio-server start
 ```
 - Open R-studio.
 
