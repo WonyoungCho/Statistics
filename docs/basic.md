@@ -40,3 +40,15 @@ plt.savefig('dist',dpi=300)
 ```
 ## kolmogorov-Smirnov test
 연속형 데이터가 정규분포를 따르는지 확인할때 쓰는 검정방법.
+
+## Statistical error
+1. Reporting measurements with unnecessary precision.
+> - the smallest P value that need be reported is P < 0.001.
+2. Dividing continuous data into ordinal categories without explaining who or how.
+> - For exmaple, Height cm to ‘short, normal, and tall’. why you choose, how the boundaries are determined.
+3. Reporting group means for paired data without reporting within-pair changes.
+4. Using descriptive statistics incorrectly.
+> - In markedly non-normal distributions, the mean and standard deviation do not communicate the shape of the distribution well. Instead, the median is recommended.
+5. Using the standard error of the mean as a descriptive statistic or as a measure of precision for an estimate.
+> - the mean and standard deviation are the preferred summary statistics for (normally distributed) data, and the mean and 95% confidence interval are preferred for reporting an estimate and its measure of precision. (95% CI = 2 SEM)
+> - e.g. “The mean value was 72kg (95% CI = 70.4 to 73.6kg).
