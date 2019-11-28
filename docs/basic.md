@@ -42,7 +42,7 @@ plt.savefig('dist',dpi=300)
 연속형 데이터가 정규분포를 따르는지 확인할때 쓰는 검정방법.
 
 ## Statistical error
-- [Twenty Statistical Errors Even YOU Can Find in Biomedical Research Articles](http://www.cmj.hr/2004/45/4/15311405.pdf), Tom Lang, CMD 45(4):361-370, 2004 
+- [Twenty Statistical Errors Even YOU Can Find in Biomedical Research Articles](http://www.cmj.hr/2004/45/4/15311405.pdf), Tom Lang, CMD 45(4):361-370, 2004.
 
 1. Reporting measurements with unnecessary precision.
 > - the smallest P value that need be reported is P < 0.001.
