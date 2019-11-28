@@ -42,6 +42,8 @@ plt.savefig('dist',dpi=300)
 연속형 데이터가 정규분포를 따르는지 확인할때 쓰는 검정방법.
 
 ## Statistical error
+- [Twenty Statistical Errors Even YOU Can Find in Biomedical Research Articles](http://www.cmj.hr/2004/45/4/15311405.pdf), Tom Lang, CMD 45(4):361-370, 2004 
+
 1. Reporting measurements with unnecessary precision.
 > - the smallest P value that need be reported is P < 0.001.
 2. Dividing continuous data into ordinal categories without explaining who or how.
@@ -52,3 +54,14 @@ plt.savefig('dist',dpi=300)
 5. Using the standard error of the mean as a descriptive statistic or as a measure of precision for an estimate.
 > - the mean and standard deviation are the preferred summary statistics for (normally distributed) data, and the mean and 95% confidence interval are preferred for reporting an estimate and its measure of precision. (95% CI = 2 SEM)
 > - e.g. “The mean value was 72kg (95% CI = 70.4 to 73.6kg).
+6. Reporting only P values for results.
+> - For main results, report the absolute difference btw groups and the 95% confidence interval for the difference.
+7. Not confirming that the data met the assumptions of the statistical tests used to analyze them.
+> - Tests may not give accurate results if their assumptions are not met.
+8. Using linear regression analysis without establishing that the relationship is, in fact, linear.
+9. Not accounting for all data and all patients.
+> - Missing data is a common but irritating reporting problem made worse by the thought that the author is careless, lazy, or both.
+10. Not reporting whether or how adjustments were made for multiple hypothesis tests.
+> - Multiple testing is often desirable, and exploratory analyses should be reported as exploratory.
+11. Unnecessarily reporting baseline statistical comparisons in randomized trials.
+> - In some cases, the P-value do not need to be reported.
