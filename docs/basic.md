@@ -65,3 +65,17 @@ plt.savefig('dist',dpi=300)
 > - Multiple testing is often desirable, and exploratory analyses should be reported as exploratory.
 11. Unnecessarily reporting baseline statistical comparisons in randomized trials.
 > - In some cases, the P-value do not need to be reported.
+
+## SEM
+: Standard Error of the Mean
+
+- [Misuse of standard error of the mean (SEM) when reporting variability of a sample](https://bjanaesthesia.org/article/S0007-0912(17)38467-2/fulltext), P. Nagele, British J. of Anaesthesia 90(4):514-16, 2001.
+
+- Standard deviation (SD)
+> - the variability between individuals in a sample.
+- Standard error of the mean (SEM)
+> - the uncertainty of how the sample mean represents the population mean.
+> - used in inferential statistics to give an estimate of how the mean of the sample is related to the mean of the underlying population.
+
+- The SD tells us the distribution of individual data points around the mean, and the SEM informs us how precise our estimate of the mean is.
+- In general, the use of the SEM should be limited to inferential statistics where the author explicitly wants to inform the reader about the precision of the study, and how well the sample truly represents the entire population. Thus, in inferential statistics, the use of SEM is valid but the CI is more valuable.
