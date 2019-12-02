@@ -79,3 +79,10 @@ plt.savefig('dist',dpi=300)
 
 - The SD tells us the distribution of individual data points around the mean, and the SEM informs us how precise our estimate of the mean is.
 - In general, the use of the SEM should be limited to inferential statistics where the author explicitly wants to inform the reader about the precision of the study, and how well the sample truly represents the entire population. Thus, in inferential statistics, the use of SEM is valid but the CI is more valuable.
+
+
+## Error and residuals
+- **A statistical error** is the difference between an observed value **in sample** and the statistical unit **in population**. For instance, the mean height of population is 1.75m. When the randomly chosen man is 1.70m tall, then the "error" is -0.05m.
+
+- **A residual** is the difference between an observed value **in sample** and the statistical unit **in sample**.
+
