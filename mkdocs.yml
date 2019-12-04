@@ -15,4 +15,5 @@ pages:
     - R-studio: 'R.md'
     - Analysis: 'analysis.md'
     - Excel: 'excel.md'
+    - Reference: 'reference.md'
 theme: readthedocs
