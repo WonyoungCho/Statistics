@@ -86,3 +86,6 @@ plt.savefig('dist',dpi=300)
 
 - **A residual** is the difference between an observed value **in sample** and the statistical unit **in sample**.
 
+
+## P-value
+- A p-value is the probability that 1) random chance generated the data, or 2) something else that is equal or 3) rarer.
