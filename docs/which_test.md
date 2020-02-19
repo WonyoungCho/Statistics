@@ -1,6 +1,6 @@
 # Which test
 
-Which test should we user?
+Which test should we use?
 
 - One categorical : proportion test.
 > - H0 : There is no difference.
