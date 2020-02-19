@@ -11,6 +11,7 @@ pages:
     - Algorithm : 'algorithm.md'
     - Basics: 
         - 'Terminology' : 'terminology.md'
+        - 'Test type' : 'which_test.md'
         - 'Statistics'  : 'basic.md'
     - R-studio: 'R.md'
     - Analysis: 'analysis.md'
