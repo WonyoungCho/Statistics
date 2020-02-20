@@ -2,13 +2,13 @@
 
 Which test should we use?
 
-- One categorical : proportion test.
+- One categorical data : Proportion test.
 > - H0 : There is no difference.
-- Two categorical : Chi squared test.
+- Two categorical data : Chi squared test.
 > - H0 : they are independent.
-- One numeric : T-test.
+- One numeric data : T-test.
 > - H0 : There is no difference.
-- One numeric and one categorical : T-test or ANOVA.
+- One numeric and one categorical data : T-test or ANOVA.
 > - H0 : There is no difference.
-- Two numeric : Correlation test.
+- Two numeric data : Correlation test.
 > - H0 : There is no relationship.
