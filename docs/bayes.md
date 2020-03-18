@@ -23,12 +23,12 @@ P(H+|T+) = P(T+|H+)P(H+)/P(T+) = (0.99 · 0.005) / (0.99 0.005 + 0.02 0.995) = 0
 
 Now we redo this calculation using a Bayesian update table:
 
-Bayes
+                              Bayes
 hypothesis prior likelihood numerator posterior
 H   P(H)  P(T+|H) P(T+|H)P(H)   P(H|T+)
 H+  0.005   0.99    0.00495     0.19920
 H−  0.995   0.02    0.01990     0.80080
-total 1    NO SUM   0.02485      1
+total 1    NO SUM   0.02485        1
 
 The table shows that the posterior probability P(H+|T+) that a person with a positive test
 has the disease is about 20%. This is far less than the sensitivity of the test (99%) but
