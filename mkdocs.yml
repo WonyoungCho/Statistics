@@ -13,6 +13,7 @@ pages:
         - 'Terminology' : 'terminology.md'
         - 'Test type' : 'which_test.md'
         - 'Statistics'  : 'basic.md'
+    - Bayes: 'bayes.md'
     - R-studio: 'R.md'
     - Analysis: 'analysis.md'
     - Excel: 'excel.md'
