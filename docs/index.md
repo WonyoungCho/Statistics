@@ -113,6 +113,13 @@ $ sudo ufw allow 8787
 - Install packages
 ```
 $ sudo yum install libgit2-devel libxml2-devel
+$ wget https://github.com/Kitware/CMake/releases/download/v3.19.1/cmake-3.19.1.tar.gz
+$ tar zxvf cmake-3.*
+$ cd cmake-3.*
+$ ./bootstrap
+$ make -j$(nproc)
+$ make install
+
 # Recommend to install as root
 > install.packages("devtools")
 > install.packages(c("devtools","curl"))
