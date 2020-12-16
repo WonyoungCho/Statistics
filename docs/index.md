@@ -15,8 +15,8 @@ Analyze data using python and R-studio.
 # R-Studio installation
 ## CentOS
 ```
-$ wget https://cran.r-project.org/src/base/R-3/R-3.6.0.tar.gz
-$ sudo tar -zxvf R-3.6.0.tar.gz -C /usr/bin/R
+$ wget https://cran.r-project.org/src/base/R-4/R-4.0.3.tar.gz
+$ sudo tar -zxvf R-4.0.3.tar.gz -C /usr/bin/R
 
 $ cd /usr/bin/R/R-3.6.0
 $ sudo ./configure  --enable-R-shlib --with-readline=no --with-x=no
