@@ -109,3 +109,9 @@ $ sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
 $ sudo firewall-cmd --reload
 $ sudo ufw allow 8787
 ```
+
+- Install packages
+```
+> install.packages("package1")
+> install.packages(c("package1",package2))
+```
