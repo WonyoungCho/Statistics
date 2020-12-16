@@ -113,7 +113,7 @@ $ sudo ufw allow 8787
 - Install packages
 ```
 > install.packages("devtools")
-> install.packages(c("SPAtest","SKAT"))
+> install.packages(c("devtools","curl"))
 ```
 Reference
 
