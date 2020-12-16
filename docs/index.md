@@ -112,6 +112,6 @@ $ sudo ufw allow 8787
 
 - Install packages
 ```
-> install.packages("package1")
-> install.packages(c("package1",package2))
+> install.packages("devtools")
+> install.packages(c("SPAtest","SKAT"))
 ```
