@@ -115,3 +115,6 @@ $ sudo ufw allow 8787
 > install.packages("devtools")
 > install.packages(c("SPAtest","SKAT"))
 ```
+Reference
+
+> <http://ds.sumeun.org/?p=832>
