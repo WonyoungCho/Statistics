@@ -113,7 +113,7 @@ $ sudo ufw allow 8787
 - Install packages
 ```
 $ sudo yum install libgit2-devel libxml2-devel
-
+# Recommend to install as root
 > install.packages("devtools")
 > install.packages(c("devtools","curl"))
 ```
