@@ -13,6 +13,17 @@ Analyze data using python and R-studio.
 
 ---
 # R-Studio installation
+Set CRAN mirror to seoul
+```
+$ vi ~/.Rprofile
+local({
+  r <- getOption("repos")
+  r["CRAN"] <- "https://cran.seoul.go.kr/"
+  options(repos = r)
+})
+```
+https://cran.r-project.org/mirrors.html
+
 ## CentOS
 ```
 $ wget https://cran.r-project.org/src/base/R-4/R-4.0.3.tar.gz
